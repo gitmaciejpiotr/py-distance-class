@@ -7,7 +7,7 @@ class Distance:
         self.km = km
 
     def __str__(self) -> str:
-        return f"Distance: {self.km} kilometers"
+        return f"Distance: {self.km} kilometers."
 
     def __repr__(self) -> str:
         return f"Distance(km={self.km})"
@@ -27,7 +27,7 @@ class Distance:
         if not isinstance(other_distance, Distance):
             self.km += other_distance
             return self
-        self.km += other_distance
+        self.km += other_distance.km
         return self
 
     def __mul__(self, other: int | float) -> object:
